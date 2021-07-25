@@ -43,7 +43,6 @@ def write_pdfs_to_csv(tables, out_file, **kwargs):
     tables.to_csv(out_file, **kwargs)
 
 if __name__ == "__main__":
-
     # for every file in the target directory
     for file_name in os.listdir(sys.argv[1]):
         cnt = 0 # keep track of tables by giving them a number
